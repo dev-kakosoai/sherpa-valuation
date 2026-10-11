@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use SHERPA, please cite it as below."
+title: "SHERPA: Shrinkage-based Heavy Equipment Residual Price Analysis"
+abstract: >-
+  An explainable model of used heavy-equipment sale prices and rental rates,
+  fitted jointly from marketplace listings with one shared machine-value core,
+  hierarchical partial pooling, robust estimation and conformal prediction
+  intervals.
+type: software
+authors:
+  - name: "EquipmentsFinder"
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/dev-kakosoai/sherpa-valuation"
+keywords:
+  - heavy equipment
+  - residual value
+  - rental rates
+  - hedonic pricing
+  - empirical Bayes
+  - conformal prediction

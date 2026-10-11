@@ -1,0 +1,64 @@
+{
+  "name": "@equipmentsfinder/sherpa",
+  "version": "0.1.0",
+  "description": "SHERPA - Shrinkage-based Heavy Equipment Residual Price Analysis. A small, explainable model of used heavy-equipment asking prices, fitted from marketplace listings.",
+  "license": "Apache-2.0",
+  "author": "EquipmentsFinder",
+  "homepage": "https://github.com/dev-kakosoai/sherpa-valuation#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-kakosoai/sherpa-valuation.git"
+  },
+  "bugs": "https://github.com/dev-kakosoai/sherpa-valuation/issues",
+  "keywords": [
+    "heavy-equipment",
+    "construction-equipment",
+    "used-equipment",
+    "valuation",
+    "residual-value",
+    "depreciation",
+    "price-estimation",
+    "hierarchical-shrinkage",
+    "empirical-bayes",
+    "theil-sen",
+    "robust-statistics"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "CITATION.cff",
+    "docs"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "bench": "tsx bench/benchmark.ts",
+    "example": "tsx examples/basic.ts",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build",
+    "charts": "tsx bench/charts.ts",
+    "recovery": "tsx bench/recovery.ts",
+    "fixtures": "tsx bench/fixtures.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

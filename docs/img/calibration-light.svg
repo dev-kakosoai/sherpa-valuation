@@ -1,0 +1,47 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='720' height='410' viewBox='0 0 720 410' role='img' aria-label='Interval calibration'>
+<rect width='720' height='410' rx='8' fill='#fcfcfb'/>
+<text x='24' y='32' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='16' font-weight='600' fill='#0b0b0b'>Interval calibration</text>
+<text x='24' y='52' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='12' fill='#52514e'>Do the stated ranges hold? Out-of-fold coverage at the 50% and 80% levels.</text>
+<line x1='64' x2='380' y1='320' y2='320' stroke='#e4e3df' stroke-width='1'/>
+<text x='56' y='324' text-anchor='end' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>40%</text>
+<line x1='64' x2='380' y1='280' y2='280' stroke='#e4e3df' stroke-width='1'/>
+<text x='56' y='284' text-anchor='end' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>50%</text>
+<line x1='64' x2='380' y1='240' y2='240' stroke='#e4e3df' stroke-width='1'/>
+<text x='56' y='244' text-anchor='end' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>60%</text>
+<line x1='64' x2='380' y1='200' y2='200' stroke='#e4e3df' stroke-width='1'/>
+<text x='56' y='204' text-anchor='end' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>70%</text>
+<line x1='64' x2='380' y1='160' y2='160' stroke='#e4e3df' stroke-width='1'/>
+<text x='56' y='164' text-anchor='end' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>80%</text>
+<line x1='64' x2='380' y1='119.99999999999994' y2='119.99999999999994' stroke='#e4e3df' stroke-width='1'/>
+<text x='56' y='123.99999999999994' text-anchor='end' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>90%</text>
+<line x1='64' x2='380' y1='360' y2='360' stroke='#bdbcb6' stroke-width='1'/>
+<text x='109.14285714285717' y='378' text-anchor='middle' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>40%</text>
+<text x='154.28571428571428' y='378' text-anchor='middle' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>50%</text>
+<text x='199.42857142857144' y='378' text-anchor='middle' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>60%</text>
+<text x='244.57142857142856' y='378' text-anchor='middle' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>70%</text>
+<text x='289.7142857142857' y='378' text-anchor='middle' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>80%</text>
+<text x='334.8571428571429' y='378' text-anchor='middle' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>90%</text>
+<text x='222' y='398' text-anchor='middle' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='12' fill='#52514e'>Promised coverage</text>
+<text transform='translate(18 220) rotate(-90)' text-anchor='middle' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='12' fill='#52514e'>Share of held-out prices inside</text>
+<line x1='64' y1='360' x2='380' y2='80' stroke='#bdbcb6' stroke-width='1' stroke-dasharray='4 3'/>
+<path d='M154.3,265.7 L289.7,147.3' stroke='#2a78d6' stroke-width='2' fill='none'/>
+<circle cx='154.28571428571428' cy='265.7142857142857' r='5' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<circle cx='289.7142857142857' cy='147.34693877551018' r='5' fill='#2a78d6' stroke='#fcfcfb' stroke-width='2'/>
+<line x1='420' x2='438' y1='120' y2='120' stroke='#2a78d6' stroke-width='2'/>
+<circle cx='429' cy='120' r='4' fill='#2a78d6'/>
+<text x='446' y='124' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='12' fill='#0b0b0b'>conformal, sale: 54% / 83%</text>
+<path d='M154.3,265.7 L289.7,157.6' stroke='#1baf7a' stroke-width='2' fill='none'/>
+<circle cx='154.28571428571428' cy='265.7142857142857' r='5' fill='#1baf7a' stroke='#fcfcfb' stroke-width='2'/>
+<circle cx='289.7142857142857' cy='157.5510204081632' r='5' fill='#1baf7a' stroke='#fcfcfb' stroke-width='2'/>
+<line x1='420' x2='438' y1='144' y2='144' stroke='#1baf7a' stroke-width='2'/>
+<circle cx='429' cy='144' r='4' fill='#1baf7a'/>
+<text x='446' y='148' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='12' fill='#0b0b0b'>conformal, rent: 54% / 81%</text>
+<path d='M154.3,261.0 L289.7,154.8' stroke='#eb6834' stroke-width='2' fill='none'/>
+<circle cx='154.28571428571428' cy='260.9523809523809' r='5' fill='#eb6834' stroke='#fcfcfb' stroke-width='2'/>
+<circle cx='289.7142857142857' cy='154.82993197278907' r='5' fill='#eb6834' stroke='#fcfcfb' stroke-width='2'/>
+<line x1='420' x2='438' y1='168' y2='168' stroke='#eb6834' stroke-width='2'/>
+<circle cx='429' cy='168' r='4' fill='#eb6834'/>
+<text x='446' y='172' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='12' fill='#0b0b0b'>normal intervals, sale: 55% / 81%</text>
+<text x='420' y='212' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>On the dashed line, a 50% range holds</text>
+<text x='420' y='228' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif' font-size='11' fill='#52514e'>half the prices and an 80% range 80%.</text>
+</svg>
