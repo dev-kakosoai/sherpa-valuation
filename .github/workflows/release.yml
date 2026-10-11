@@ -42,14 +42,24 @@ jobs:
     permissions:
       id-token: write
     env:
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # setup-node puts a placeholder in NODE_AUTH_TOKEN when the secret is
+      # empty, so the presence of the secret is checked on its own.
+      HAS_NPM_TOKEN: ${{ secrets.NPM_TOKEN != '' }}
     steps:
+      - name: Skip without an npm token
+        if: env.HAS_NPM_TOKEN != 'true'
+        run: echo "NPM_TOKEN is not set; skipping npm publish."
       - uses: actions/checkout@v4
+        if: env.HAS_NPM_TOKEN == 'true'
       - uses: actions/setup-node@v4
+        if: env.HAS_NPM_TOKEN == 'true'
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org
-      - run: npm ci
+      - if: env.HAS_NPM_TOKEN == 'true'
+        run: npm ci
       - name: Publish
-        if: env.NODE_AUTH_TOKEN != ''
+        if: env.HAS_NPM_TOKEN == 'true'
         run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
