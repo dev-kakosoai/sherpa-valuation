@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "SHERPA - Shrinkage-based Heavy Equipment Residual Price Analysis. A small, explainable model of used heavy-equipment asking prices, fitted from marketplace listings.",
   "license": "Apache-2.0",
-  "author": "EquipmentsFinder",
+  "author": {
+    "name": "EquipmentsFinder",
+    "url": "https://www.equipmentsfinder.com"
+  },
   "homepage": "https://github.com/dev-kakosoai/sherpa-valuation#readme",
   "repository": {
     "type": "git",
@@ -21,7 +24,10 @@
     "hierarchical-shrinkage",
     "empirical-bayes",
     "theil-sen",
-    "robust-statistics"
+    "robust-statistics",
+    "equipmentsfinder",
+    "equipment-rental",
+    "equipment-marketplace"
   ],
   "type": "module",
   "main": "./dist/index.js",

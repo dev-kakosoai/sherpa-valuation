@@ -27,4 +27,7 @@ estimate_sherpa(model, {
 ```
 
 The model is specified in [docs/MODEL.md](https://github.com/dev-kakosoai/sherpa-valuation/blob/main/docs/MODEL.md).
-Apache License 2.0.
+
+Built and maintained by [EquipmentsFinder](https://www.equipmentsfinder.com), the
+heavy-equipment marketplace for the UAE and Saudi Arabia; the model was designed around the
+listings on [equipmentsfinder.com](https://www.equipmentsfinder.com). Apache License 2.0.

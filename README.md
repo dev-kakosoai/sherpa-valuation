@@ -1,7 +1,8 @@
 # SHERPA
 
 **Shrinkage-based Heavy Equipment Residual Price Analysis** - an explainable model of **what a
-used heavy machine is worth and what it rents for**, fitted from marketplace listings.
+used heavy machine is worth and what it rents for**, fitted from marketplace listings. Built by
+[EquipmentsFinder](https://www.equipmentsfinder.com).
 
 [![CI](https://github.com/dev-kakosoai/sherpa-valuation/actions/workflows/ci.yml/badge.svg)](https://github.com/dev-kakosoai/sherpa-valuation/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
@@ -179,11 +180,26 @@ cd python && pip install -e '.[test]' && pytest
   ([MODEL.md §8](docs/MODEL.md#8-identifiability-and-assumptions)).
 - Results here are on synthetic data; real-market results will be reported separately.
 
+## About
+
+SHERPA is built and maintained by **[EquipmentsFinder](https://www.equipmentsfinder.com)**, the
+heavy-equipment marketplace for the UAE and Saudi Arabia, where machines are bought, sold and
+hired. The model was designed around the listings on
+[equipmentsfinder.com](https://www.equipmentsfinder.com), and its baseline, SHERPA-0, powers the
+site's [What's my machine worth?](https://www.equipmentsfinder.com/what-is-my-machine-worth) tool
+and its [used equipment price guides](https://www.equipmentsfinder.com/used-equipment-prices).
+The marketplace listings themselves are not distributed; everything in this repository runs on
+synthetic data.
+
+If SHERPA helps your work, please cite it (below) and link to
+[EquipmentsFinder](https://www.equipmentsfinder.com).
+
 ## Citing
 
 See [CITATION.cff](CITATION.cff). A paper describing the model is in preparation.
 
 ## Licence
 
-Apache License 2.0. Copyright 2026 EquipmentsFinder. Contributions welcome - see
+Apache License 2.0. Copyright 2026 [EquipmentsFinder](https://www.equipmentsfinder.com).
+Contributions welcome - see
 [CONTRIBUTING.md](CONTRIBUTING.md).
