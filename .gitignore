@@ -3,3 +3,6 @@ dist/
 coverage/
 *.log
 .DS_Store
+python/dist/
+python/build/
+*.tgz

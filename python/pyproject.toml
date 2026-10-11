@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,13 +7,13 @@ name = "sherpa-valuation"
 version = "0.1.0"
 description = "SHERPA - Shrinkage-based Heavy Equipment Residual Price Analysis: an explainable model of used heavy-equipment sale prices and rental rates, fitted from marketplace listings."
 readme = "README.md"
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [{ name = "EquipmentsFinder", email = "support@equipmentsfinder.com" }]
 requires-python = ">=3.9"
 dependencies = []
 keywords = ["heavy-equipment", "valuation", "residual-value", "depreciation", "rental-rates", "empirical-bayes", "conformal-prediction"]
 classifiers = [
-  "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python :: 3",
   "Intended Audience :: Science/Research",
   "Topic :: Scientific/Engineering :: Mathematics",

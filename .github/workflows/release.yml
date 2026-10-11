@@ -1,0 +1,55 @@
+name: Release
+
+# Publishes to PyPI and npm when a GitHub release is published.
+# - PyPI: trusted publishing (OpenID Connect), no token. Configure once on pypi.org:
+#   project sherpa-valuation -> Publishing -> GitHub: owner dev-kakosoai,
+#   repository sherpa-valuation, workflow release.yml, environment pypi;
+#   then set the repository variable PUBLISH_PYPI to true.
+# - npm: the NPM_TOKEN repository secret (an npm automation token for the
+#   @equipmentsfinder scope). Without it the npm job is skipped.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pypi:
+    if: vars.PUBLISH_PYPI == 'true'
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    defaults:
+      run:
+        working-directory: python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install build pytest && pip install -e . && pytest -q
+      - run: python -m build
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: python/dist
+
+  npm:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - run: npm ci
+      - name: Publish
+        if: env.NODE_AUTH_TOKEN != ''
+        run: npm publish --provenance --access public
