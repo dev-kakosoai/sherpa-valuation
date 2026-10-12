@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering\small
+\caption{Robustness: MdAPE (\%) with 80 listings per category and side, mean over three markets. Models are trained on the raw listings; scored on held-out listings with plausible prices.}
+\label{tab:robust}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{Sale prices} & \multicolumn{3}{c}{Rental rates} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Condition & Median & OLS & \textsc{sherpa-1} & Median & OLS & \textsc{sherpa-1} \\
+\midrule
+0\% impossible prices & 50.8 & \textbf{26.3} & 27.2 & 46.6 & 28.8 & \textbf{27.4} \\
+5\% impossible prices & 51.0 & 42.0 & \textbf{27.0} & 47.8 & 42.4 & \textbf{27.6} \\
+10\% impossible prices & 50.8 & 51.0 & \textbf{26.2} & 48.9 & 51.8 & \textbf{27.6} \\
+20\% impossible prices & 51.4 & 64.6 & \textbf{27.8} & 48.1 & 66.7 & \textbf{27.9} \\
+\midrule
+10\% empty fields & 48.8 & 31.9 & \textbf{24.3} & 48.4 & 32.4 & \textbf{24.5} \\
+30\% empty fields & 48.8 & 35.9 & \textbf{31.3} & 48.4 & 36.3 & \textbf{29.5} \\
+50\% empty fields & 48.8 & 41.6 & \textbf{36.9} & 48.4 & 38.3 & \textbf{33.2} \\
+\bottomrule
+\end{tabular}
+\end{table}

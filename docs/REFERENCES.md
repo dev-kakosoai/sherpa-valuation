@@ -155,12 +155,16 @@ SHERPA does **not** claim to be the first hedonic model of rents or of sales, th
 user-cost price-rent model, the first conformal valuation model, or the first partially pooled
 hedonic model. Any "first" for the joint equipment model should read *"to our knowledge"*.
 
+## Estimation details
+
+- **[polyak1992]** Polyak, B. T., & Juditsky, A. B. (1992). Acceleration of stochastic
+  approximation by averaging. *SIAM Journal on Control and Optimization, 30*(4), 838-855.
+  https://doi.org/10.1137/0330046 - verified. Averaging of iterates.
+- **[barber2021]** Barber, R. F., Candès, E. J., Ramdas, A., & Tibshirani, R. J. (2021).
+  Predictive inference with the jackknife+. *The Annals of Statistics, 49*(1), 486-507.
+  https://doi.org/10.1214/20-AOS1965 - verified. Coverage of cross-conformal intervals.
+
 ## Still to verify
 
-- Polyak, B. T., & Juditsky, A. B. (1992). Acceleration of stochastic approximation by
-  averaging. *SIAM Journal on Control and Optimization, 30*(4). - averaging of iterates.
-- Barber, R. F., Candès, E. J., Ramdas, A., & Tibshirani, R. J. (2021). Predictive inference
-  with the jackknife+. *Annals of Statistics, 49*(1). - the coverage guarantee of
-  cross-conformal intervals.
 - Jorge & Herbsman (1989), equipment rental rates for force-account work - partly verified;
   McClelland & Rust (2016, working paper) - unverified. Not cited until confirmed.

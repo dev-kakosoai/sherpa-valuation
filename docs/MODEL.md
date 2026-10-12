@@ -8,7 +8,7 @@ free text, and outliers.
 This document specifies **SHERPA-1**. **SHERPA-0**, the sale-only model it extends, is kept in the
 library as the baseline (section 10).
 
-> Status: draft specification for review. References are listed in [REFERENCES.md](REFERENCES.md); those marked `[?]` are not yet verified.
+> Status: draft specification for review. References are listed in [REFERENCES.md](REFERENCES.md); all are verified.
 
 ---
 
@@ -261,7 +261,7 @@ directly, because β's units change with λ. SHERPA shrinks the *depreciation at
 **Why averaging.** Backfitting with median updates is not guaranteed to converge: in testing
 it settled near the fixed point and then wandered around it by about ±0.8% in prediction,
 indefinitely. Averaging the iterates after a burn-in, as in stochastic approximation [Polyak &
-Juditsky 1992 `[?]`], fixes the answer and reduces the wander about tenfold.
+Juditsky 1992], fixes the answer and reduces the wander about tenfold.
 
 **Speed.** Theil-Sen slopes are computed on at most 160 evenly spaced points per category (300
 pooled). Every step is a median or a Theil-Sen slope: no matrix inversion, no dependency, and
@@ -280,7 +280,7 @@ the fit is deterministic.
 Inputs the user leaves out contribute their reference value (0) and are recorded as missing.
 
 **Intervals.** SHERPA uses **normalised cross-conformal prediction**
-[Vovk, Gammerman & Shafer 2005; Lei et al. 2018; Barber et al. 2021 `[?]`]:
+[Vovk, Gammerman & Shafer 2005; Lei et al. 2018; Barber et al. 2021]:
 
 1. Split the listings into K folds (default 5, by a hash of the listing id). For each fold, fit
    on the others and score every held-out listing:

@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering\small
+\caption{Median absolute percentage error (\%) by listings per category and side; four-fold cross-validation, mean over three markets. Best per side in bold.}
+\label{tab:size}
+\begin{tabular}{rccccccc}
+\toprule
+ & \multicolumn{4}{c}{Sale prices} & \multicolumn{3}{c}{Rental rates} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-8}
+$n$ & Median & \textsc{sherpa-0} & OLS & \textsc{sherpa-1} & Median & OLS & \textsc{sherpa-1} \\
+\midrule
+20 & 46.2 & 33.6 & 45.4 & \textbf{30.6} & 50.5 & 49.6 & \textbf{28.0} \\
+40 & 53.1 & 35.9 & 38.1 & \textbf{31.4} & 50.8 & 44.3 & \textbf{28.4} \\
+80 & 50.9 & 31.4 & 33.2 & \textbf{26.5} & 48.0 & 35.3 & \textbf{26.1} \\
+160 & 50.2 & 30.0 & 29.4 & \textbf{24.2} & 45.5 & 30.0 & \textbf{23.9} \\
+\bottomrule
+\end{tabular}
+\end{table}
